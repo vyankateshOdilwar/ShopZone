@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShopZone HomePage</title>
     <style>
-        .working {
-            font-size: 48px;
-        }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+
+      .lottie {
+        width: 700px;
+        height: 700px;
+      }
     </style>
-</head>
-<body>
-    <div class="working">This site is under the development</div>
-</body>
+  </head>
+  <body>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
+    <dotlottie-player
+      class="lottie"
+      src="https://lottie.host/7d26b084-5c2c-439d-ae7a-638ba325def9/RfKOTWhnpP.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay
+    ></dotlottie-player>
+  </body>
 </html>

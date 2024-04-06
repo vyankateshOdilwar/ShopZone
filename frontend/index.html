@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>Stripe Payment Demo</title>
+<body>
+	<h1>CheckOut</h1>
+	<h3>Buy each Shirt Just in $50  Quantiti ( 3 )</h3>
+	<form action="http://localhost:3000/api/payment" method="POST">
+    <input type="hidden" name="amount" value="15000">
+    <input type="hidden" name="productId" value="660edf8e48c3fe4b533428b4">
+    <input type="hidden" name="quantity" value="1">
+    <input type="hidden" name="productName" value="Shocks">
+    <input type="hidden" name="address" value="this is adress pesahwar">
+    <input type="hidden" name="postalCode" value="25000">
+    <input type="hidden" name="city" value="Peshawar">
+    <input type="hidden" name="country" value="Pakistan">
+
+    <input name="token" id="token-input" placeholder="token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBlZTFmNTRmYTZmODBkZjdmMjZhZjciLCJpYXQiOjE3MTIzMzU0MjksImV4cCI6MTcxMjMzOTAyOX0.sVfi1uMRn6_8ZbCrZMj1L7eDI3ba9Brauh0mfrd2YdA">
+	<script
+		src="//checkout.stripe.com/v2/checkout.js"
+		class="stripe-button"
+		data-key="pk_test_51P27AhA8codDyAsMF1VxNjPmYfYuieScS7wNW8LFLB1FZBnlOv3T3PthREHwVnahWVmaBbIPPx4h1aKb4x1uEJNf00hLpAVo2w"
+		data-amount="15000"
+		data-currency="usd"
+		data-name="Shirt"
+		data-description="Cotton Shirt Products"
+		data-locale="auto" >
+		</script>
+	</form>
+</body>
+</html>

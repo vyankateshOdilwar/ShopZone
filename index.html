@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ShopZone HomePage</title>
+    <title>ShopZone - Under Construction</title>
     <style>
         body {
             display: flex;
@@ -12,53 +12,63 @@
             align-items: center;
             margin: 0;
             height: 100vh;
-            background-color: #f4f4f4;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
+            background: linear-gradient(135deg, #e2e2e2, #ffffff);
+            font-family: 'Arial', sans-serif;
+            color: #444;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background: #fff;
         }
 
         .lottie {
-            width: 80%;
-            max-width: 600px;
-            margin-bottom: 20px;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
         }
 
         h1 {
-            font-size: 5vw;
-            font-weight: 700;
-            margin: 0;
+            font-size: 2.5em;
+            margin: 20px 0;
+            font-weight: 600;
         }
 
         .contributors {
-            font-size: 3vw;
-            font-weight: 400;
-            opacity: 0.7;
-            text-align: center;
+            font-size: 1.2em;
+            margin-top: 15px;
+            opacity: 0.8;
         }
 
         @media (max-width: 600px) {
             h1 {
-                font-size: 8vw;
+                font-size: 2em;
             }
             .contributors {
-                font-size: 4vw;
+                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <div class="container">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
-    <dotlottie-player
-        class="lottie"
-        src="https://lottie.host/7d26b084-5c2c-439d-ae7a-638ba325def9/RfKOTWhnpP.json"
-        background="transparent"
-        speed="1"
-        loop
-        autoplay
-    ></dotlottie-player>
+        <dotlottie-player
+            class="lottie"
+            src="https://lottie.host/7d26b084-5c2c-439d-ae7a-638ba325def9/RfKOTWhnpP.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+        ></dotlottie-player>
 
-    <h1>Website is Under Construction</h1>
-    <div class="contributors">Contributors: Vyankatesh Odilwar, Khanderao Wakde, Mayuri Eklare</div>
+        <h1>We're Building Something Great!</h1>
+        <div class="contributors">Contributors: Vyankatesh Odilwar, Khanderao Wakde, Mayuri Eklare</div>
+    </div>
 </body>
 </html>
